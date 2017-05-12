@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>VR Reality</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<script>
+$(document).ready(function(){
+    $(document).keypress(function(e)
+        {
+
+            var keynum;
+            if(window.event)
+            { // IE                 
+                keynum = e.keyCode;
+            }
+                else if(e.which)
+                    { 
+                    // Netscape/Firefox/Opera                   
+                    keynum = e.which;
+                    }
+                    
+
+                    if(String.fromCharCode(keynum) === "1"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/hawaii.mp4";
+                    	source.load();
+                    	source.play();
+
+                    }
+                    else if (String.fromCharCode(keynum) === "2"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/walking.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+                    else if (String.fromCharCode(keynum) === "3"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/matrix.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+                    else if (String.fromCharCode(keynum) === "4"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/static.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+                    else if (String.fromCharCode(keynum) === "5"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/sur.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+                    else if (String.fromCharCode(keynum) === "6"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/news.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+                    else if (String.fromCharCode(keynum) === "7"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/times.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+                    else if (String.fromCharCode(keynum) === "8"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/traffic.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+                    else if (String.fromCharCode(keynum) === "9"){
+                    	var source = document.getElementById('wrapper');
+                    	var video = document.getElementById('video');
+
+                    	source.pause();
+                    	video.src = "vid/black.mp4";
+                    	source.load();
+                    	source.play();
+                    }
+        });
+});  
+
+</script>
+
+<body>
+<div> <video id="wrapper" muted=”muted” preload="yes" autoplay="autoplay" loop="loop" width="100%" height="">
+
+ <!-- <source src="http://cdn2.hubspot.net/hub/178504/file-1741273142-mp4/Video/iStock_000023378570Big_Web.mp4">  -->
+ <source id="video" src="vid/matrix.mp4">
+
+</video>
+
+</div>
+</body>
+
+</html>
